@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clienthunter"
+version = "0.1.0"
+description = "Business lead discovery: find businesses with weak or no web presence (OpenStreetMap Overpass, opportunity scoring, CSV/Markdown export)."
+readme = "README.md"
+license = { text = "GPL-3.0-or-later" }
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+clienthunter = "clienthunter.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
